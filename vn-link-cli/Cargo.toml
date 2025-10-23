@@ -9,8 +9,6 @@ common = { path = "../common", default-features = false }
 tokio = { version = "1.37.0", features = ["full"] }
 log = "0.4.17"
 
-[target.'cfg(windows)'.build-dependencies]
-thunk-rs = { version = "0.3.3", features = ["win7"] }
 
 [features]
 default = ["default-feature"]
